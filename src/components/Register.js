@@ -10,7 +10,7 @@ function Register({ showLogin }) {
     e.preventDefault();
 
     axios
-      .post("https://product-review-platform-a9iq.onrender.com//api/auth/register", {
+      .post("https://product-review-platform-a9iq.onrender.com/api/auth/register", {
         name,
         email,
         password
