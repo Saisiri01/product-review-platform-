@@ -9,7 +9,7 @@ function Login({ showRegister, onLogin }) {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5000/api/auth/login", {
+      .post("https://product-review-platform-a9iq.onrender.com//api/auth/login", {
         email,
         password
       })

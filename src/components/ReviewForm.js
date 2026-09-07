@@ -12,7 +12,7 @@ function ReviewForm({ productId, onReviewAdded }) {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        `http://localhost:5000/api/products/${productId}/reviews`,
+        `https://product-review-platform-a9iq.onrender.com//api/products/${productId}/reviews`,
         {
           rating: Number(rating),
           comment

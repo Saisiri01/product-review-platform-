@@ -28,7 +28,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products")
+      .get("https://product-review-platform-a9iq.onrender.com//api/products")
       .then((response) => {
         setProducts(response.data);
       })
@@ -40,7 +40,7 @@ function App() {
   const addProduct = (product) => {
     axios
       .post(
-        "http://localhost:5000/api/products",
+        "https://product-review-platform-a9iq.onrender.com//api/products",
         product,
         {
           headers: {
@@ -67,7 +67,7 @@ function App() {
   const updateProduct = (productId, updatedData) => {
     axios
       .put(
-        `http://localhost:5000/api/products/${productId}`,
+        `https://product-review-platform-a9iq.onrender.com//api/products/${productId}`,
         updatedData,
         {
           headers: {
@@ -107,7 +107,7 @@ function App() {
 
     axios
       .delete(
-        `http://localhost:5000/api/products/${productId}`,
+        `https://product-review-platform-a9iq.onrender.com//api/products/${productId}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`

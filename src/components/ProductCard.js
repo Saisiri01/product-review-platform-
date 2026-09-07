@@ -21,7 +21,7 @@ function ProductCard({ product, onProductUpdated }) {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        `http://localhost:5000/api/products/${product._id}/reviews/${reviewId}`,
+        `https://product-review-platform-a9iq.onrender.com//api/products/${product._id}/reviews/${reviewId}`,
         {
           rating: editRating,
           comment: editComment
@@ -54,7 +54,7 @@ function ProductCard({ product, onProductUpdated }) {
       const token = localStorage.getItem("token");
 
       const response = await axios.delete(
-        `http://localhost:5000/api/products/${product._id}/reviews/${reviewId}`,
+        `https://product-review-platform-a9iq.onrender.com//api/products/${product._id}/reviews/${reviewId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`
